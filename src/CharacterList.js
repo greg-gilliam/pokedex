@@ -7,7 +7,7 @@ class CharacterList extends Component {
         return ( 
             <ul>
                 {this.props.characters.map((char) => {
-                    return <CharacterItem key={char.Name} character={char} />;
+                    return <CharacterItem key={char.pokemon} character={char} />;
                 })}
             </ul>
          );
