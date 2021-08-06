@@ -36,6 +36,9 @@ class App extends Component {
   updateQuery = (event)=>{
    this.setState({ query: event.target.value });
 }
+  updateSort = (event)=>{
+    this.setState({sortOrder: event.target.value });
+  }
 
   render() { 
     return(
