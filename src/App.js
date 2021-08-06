@@ -4,7 +4,7 @@ import CharacterList from './CharacterList.js'
 
 
 class App extends Component {
-  state = { data: [], loading: true, query: null };
+  state = { data: [], loading: true, query: null, sort: '' };
 
   fetchData = async() => {
     let url = "https://pokedex-alchemy.herokuapp.com/api/pokedex";
