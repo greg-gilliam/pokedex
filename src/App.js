@@ -22,9 +22,7 @@ class App extends Component {
       searchParams.set('sort', 'pokemon');
       searchParams.set('direction', this.state.sortOrder);
     }
-      // url = url + `?pokemon=${this.state.query}`;
     
-
     url = url + `?${searchParams.toString()}`;
 
     let response = await fetch(url);
