@@ -17,12 +17,11 @@ class PokeDetail extends Component {
 
     render() { 
         console.log(this.props.match);
-        const { id } = this.props.match.params;
         const { data } = this.state;
         return ( 
         <section>
                 <h1>{data.pokemon}</h1>
-                <img src={this.state.data.url_image} alt="pokemon" />
+                <img src={data.url_image} alt="pokemon" />
         </section> );
     }
 }
