@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './App.css';
-import CharacterList from './CharacterList.js'
+import PokeList from './PokeList.js'
 
 
 class App extends Component {
@@ -51,7 +51,7 @@ class App extends Component {
             </select>
             <input onChange={this.updateQuery} type="text"></input>
             <button onClick={this.fetchData}>Search!</button>
-            <CharacterList characters={this.state.data} />
+            <PokeList characters={this.state.data} />
           </section>
         )}
       </>

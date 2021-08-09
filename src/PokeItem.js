@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class CharacterItem extends Component {
+class PokeItem extends Component {
     render() { 
         return ( 
             <li>
@@ -10,4 +10,4 @@ class CharacterItem extends Component {
     }
 }
  
-export default CharacterItem;
+export default PokeItem
