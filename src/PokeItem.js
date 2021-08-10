@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './PokeItem.css';
 
-
 class PokeItem extends Component {
     render() { 
+        const { character } = this.props;
         return ( 
-            <li>
-                <h3>
                     <Link to={`/pokemon/${this.props.character._id}`}>
-                    {this.props.character.pokemon}
+                    <div className="pokemon">
+                        {character.pokemon}
+                        <img src={character.url_image} alt="pokemon" />
+                        </div>
                     </Link>
-                    </h3>
-            </li>
          );
     }
 }
