@@ -1,0 +1,9 @@
+.poke-detail {
+  width: 300px;
+}
+
+.poke-detail img {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
